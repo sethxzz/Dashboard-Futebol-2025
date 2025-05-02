@@ -16,6 +16,6 @@ Queria agradecer aos meus companheiros de grupo, que puderam me ajudar a desenvo
 (Digo já que o site foi totalmente desenvolvido para dark-mode, então usá-lo no light-mode poderá ter alguns erros.
 
 LINK DO SITE HOSPEDADO
-ABAIXO!!!!1
+ABAIXO!!!!
 
 https://dashboard-futebol-2025.vercel.app
