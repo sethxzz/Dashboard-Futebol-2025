@@ -5,7 +5,7 @@ Olá. Sejam bem-vindos ao Dashboard Brasileirão 2025, um projeto experimental q
 Aqui podemos encontrar as mais padrões tecnologias do desenvolvimento web, como:
 
 - HTML
-- -CSS
+- CSS
 - JavaScript
 - Chart.js
 
