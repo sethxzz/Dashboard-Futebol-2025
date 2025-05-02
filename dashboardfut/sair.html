@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saindo...</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <body>
+        <div class="container">
+            <main class="saida-container">
+                <div class="balao-saida">
+                    <h2>SAINDO</h2>
+                    <p>Sua sessão foi encerrada.</p>
+                    <a href="https://www.google.com/search?q=Dashboard+Brasileir%C3%A3o" target="_self">
+                       Redirecionando...
+                    </a>
+                </div>
+            </main>
+        </div>
+
+    </head>
+
+
+
+
+
+
+    <style>
+
+body {
+            background-image: url('br.webp'); /* Substitua 'sua-imagem.jpg' pelo caminho da sua imagem */
+            background-size: cover; /* Ajusta a imagem para cobrir todo o fundo */
+            background-repeat: no-repeat; /* Evita que a imagem se repita */
+            background-position: center; /* Centraliza a imagem */
+            height: 100vh; /* Garante que o fundo cubra a tela toda */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+
+        /* Estilos Personalizados para o Balão de Saída */
+        .saida-container {
+            display: flex;
+            justify-content: center; /* Centraliza horizontalmente */
+            align-items: center;   /* Centraliza verticalmente */
+            height: 80vh;        /* Garante que ocupa toda a altura da tela */
+        }
+
+        .balao-saida {
+            background: linear-gradient(to bottom, #009c3b, #ffd700); /* Degradê Brasil */
+            border-radius: var(--border-radius-2);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 2rem;
+            text-align: center;
+            max-width: 400px;
+            width: 100%;
+            transition: transform 0.2s ease-in-out;
+            cursor: pointer;
+            color: rgb(0, 0, 0); /* Cor do texto para contrastar com o degradê */
+        }
+
+        .balao-saida:hover {
+            transform: scale(1.03);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        .balao-saida h2 {
+            color: rgb(255, 255, 255);
+            margin-bottom: 1rem;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Sombra no texto para legibilidade */
+        }
+
+        .balao-saida p {
+            color: white;
+            margin-bottom: 1.5rem;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+
+        .balao-saida a {
+            color: var(--clr-dark);
+            background-color: white;
+            padding: 0.5rem 1rem;
+            border-radius: var(--border-radius-1);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .balao-saida a:hover {
+            background-color: var(--clr-light);
+        }
+
+        /* Estilos para o Dark Mode */
+        body.dark-theme-variables .balao-saida {
+            background: linear-gradient(to bottom, #00561e, #a69100); /* Degradê mais escuro para o dark mode */
+            color: var(--clr-white);
+            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+        }
+
+        body.dark-theme-variables .balao-saida a {
+            color: var(--clr-white);
+            background-color: var(--clr-dark);
+        }
+
+        body.dark-theme-variables .balao-saida a:hover {
+            background-color: var(--clr-dark-variant);
+        }
+    </style>
+
+
+
+
+
+
+
+
+    <script>
+        const body = document.body;
+        const themeToggler = document.querySelector('.theme-toggler'); // Se você tiver o theme-toggler nesta página
+
+        // Função para salvar o tema no localStorage
+        function saveTheme(themeName) {
+            localStorage.setItem('theme', themeName);
+        }
+
+        // Função para carregar o tema do localStorage
+        function loadTheme() {
+            const selectedTheme = localStorage.getItem('theme');
+            if (selectedTheme === 'dark') {
+                body.classList.add('dark-theme-variables');
+                if (themeToggler) { // Verifique se themeToggler existe
+                    themeToggler.querySelector('span:nth-child(1)').classList.remove('active');
+                    themeToggler.querySelector('span:nth-child(2)').classList.add('active');
+                }
+            } else {
+                body.classList.remove('dark-theme-variables');
+                if (themeToggler) { // Verifique se themeToggler existe
+                    themeToggler.querySelector('span:nth-child(1)').classList.add('active');
+                    themeToggler.querySelector('span:nth-child(2)').classList.remove('active');
+                }
+            }
+        }
+
+        if (themeToggler) { // Verifique se themeToggler existe
+            themeToggler.addEventListener('click', () => {
+                body.classList.toggle('dark-theme-variables');
+                themeToggler.querySelector('span:nth-child(1)').classList.toggle('active');
+                themeToggler.querySelector('span:nth-child(2)').classList.toggle('active');
+
+                // Salva o tema atual no localStorage
+                if (body.classList.contains('dark-theme-variables')) {
+                    saveTheme('dark');
+                } else {
+                    saveTheme('light');
+                }
+            });
+        }
+
+        // Carrega o tema salvo ao carregar a página
+        loadTheme();
+    </script>
+
+
+</body>
+
+</html>

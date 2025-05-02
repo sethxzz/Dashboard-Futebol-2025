@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Brasileirão 2025</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+
+        <div class="container">
+
+
+<aside>
+
+          <div class="top">
+
+          <div class="logo">
+    <h2>BR<span class="danger">ASILEIRÃO</span></h2>
+          </div>
+          <div class="close" id="close_btn">
+          <span class="material-symbols-outlined">  close </span> 
+          </div>
+
+          </div>
+<div class="sidebar">
+    
+    <a href="dashboard.html">
+        <span class="material-symbols-outlined">grid_view</span>
+        <h3>Dashboard</h3>
+    </a>
+
+    <a href="index.html" class="active">
+        <span class="material-symbols-outlined">person</span>
+        <h3>Visão Geral</h3>
+    </a>
+
+    <a href="dados.html">
+        <span class="material-symbols-outlined">insights</span>
+        <h3>Dados</h3>
+    </a>
+
+    <a href="https://ge.globo.com/futebol/">
+        <span class="material-symbols-outlined">newspaper</span>
+        <h3>Notícias</h3>
+    </a>
+
+    <a href="quiz.html">
+        <span class="material-symbols-outlined">quiz</span>
+        <h3>Quiz</h3>
+    </a>
+
+    <a href="reportar">
+        <span class="material-symbols-outlined">report</span>
+        <h3>Reportar</h3>
+    </a>
+
+    <a href="configuracoes">
+        <span class="material-symbols-outlined">settings</span>
+        <h3>Configurações</h3>
+    </a>
+
+    <a href="adicionar">
+        <span class="material-symbols-outlined">add</span>
+        <h3>Adicionar</h3>
+    </a>
+
+    <a href="sair.html">
+        <span class="material-symbols-outlined">logout</span>
+        <h3>Sair</h3>
+    </a>
+
+</div>
+         
+
+    </aside>
+<main>
+<h1>DASHBOARD BRASILEIRÃO</h1>
+<div class="date">
+    <input type="date">
+</div>
+
+<div class="insights">
+    <div class="sales">
+        <span class="material-symbols-outlined">sports_soccer</span>
+        <div class="middle">
+            <div class="left">
+                <h3>GOLS TOTAIS</h3>
+                <h1>140</h1>
+            </div>
+            <div class="progress">
+                <svg>
+                    <circle r="30" cy="40" cx="40"></circle>
+                </svg>
+                <div class="number">76%</div>
+            </div>
+        </div>
+        <small>Últimas 24 horas</small>
+    </div>
+    <div class="expenses">
+    <span class="material-symbols-outlined">handshake</span>
+    <div class="middle">
+        <div class="left">
+            <h3>ASSISTÊNCIAS TOTAIS</h3>
+            <h1>124</h1>
+        </div>
+        <div class="progress">
+            <svg>
+                <circle r="30" cy="40" cx="40"></circle>
+            </svg>
+            <div class="number">78%</div>
+        </div>
+    </div>
+    <small>Últimas 24 horas</small>
+</div>
+<div class="income">
+    <span class="material-symbols-outlined">web_stories</span>
+    <div class="middle">
+        <div class="left">
+            <h3>CARTÕES</h3>
+            <h1>312</h1>
+        </div>
+        <div class="progress">
+            <svg>
+                <circle r="30" cy="40" cx="40"></circle>
+            </svg>
+            <div class="number">100%</div>
+        </div>
+    </div>
+    <small>Últimas 24 horas</small>
+</div>
+</div>
+<div class="recent_order">
+    <h1>CLASSIFICAÇÕES GERAIS</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>CLUBE</th>
+                <th>PARTIDAS JOGADAS</th>
+                <th>SALDO DE GOLS</th>
+                <th>PONTOS</th>
+            </tr>
+        </thead>
+<tbody>
+    <tr>
+        <td>FLAMENGO</td>
+        <td>6</td>
+        <td>13</td>
+        <td class="warning">14</td>
+        <td class="primary">Detalhes</td>
+    </tr>
+
+    <tr>
+        <td>PALMEIRAS</td>
+        <td>6</td>
+        <td>4</td>
+        <td class="warning">13</td>
+        <td class="primary">Detalhes</td>
+    </tr>
+
+    <tr>
+        <td>BRAGANTINO</td>
+        <td>6</td>
+        <td>3</td>
+        <td class="warning">13</td>
+        <td class="primary">Detalhes</td>
+    </tr>
+
+    <tr>
+        <td>CRUZEIRO</td>
+        <td>6</td>
+        <td>1</td>
+        <td class="warning">10</td>
+        <td class="primary">Detalhes</td>
+    </tr>
+
+    <tr>
+        <td>FLUMINENSE</td>
+        <td>6</td>
+        <td>0</td>
+        <td class="warning">10</td>
+        <td class="primary">Detalhes</td>
+    </tr>
+
+    <tr>
+        <td>INTERNACIONAL</td>
+        <td>6</td>
+        <td>4</td>
+        <td class="warning">9</td>
+        <td class="primary">Detalhes</td>
+    </tr>
+
+</tbody>
+
+
+    </table>
+</div>
+
+
+
+</main>
+<div class="right">
+<div class="top">
+    <button id="menu_bar">
+        <span class="material-symbols-outlined">menu</span>
+        </button>
+<div class="theme-toggler">
+    <span class="material-symbols-outlined active">light_mode</span>
+    <span class="material-symbols-outlined">dark_mode</span>
+</div>
+<div class="profile">
+    <div class="info">
+        <p><b>Lucca</b></p>
+        <p>Admin</p>
+        <small class="text-muted"></small>
+    </div>
+    <div class="profile-photo">
+        <img src="profile-1.jpg.jpg" alt="">
+    </div>
+</div>
+
+</div>
+<div class="recent_updates">
+    <h2>ARTILHEIROS</h2>
+    <div class="updates">
+<div class="update">
+    <div class="profile-photo">
+        <img src="Arrascae.jpg" alt="">
+    </div>
+    <div class="message">
+        <p><b>Arrascaeta</b> 5 GOLS</p>
+    </div>
+</div>
+<div class="update">
+    <div class="profile-photo">
+        <img src="VEGETTI.webp" alt="">
+    </div>
+    <div class="message">
+        <p><b>P... Vegetti</b> 4 GOLS</p>
+    </div>
+</div>
+<div class="update">
+    <div class="profile-photo">
+        <img src="Pedro-Raul.webp" alt="">
+    </div>
+    <div class="message">
+        <p><b>Pedro Raul</b> 4 GOLS</p>
+    </div>
+</div>
+</div>
+
+
+
+</div>
+<div class="sales_analytics">
+    <h2>RESULTADOS</h2>
+
+    <div class="item onlion">
+        <div class="icon">
+            <span class="material-symbols-outlined">sports_and_outdoors</span>
+        </div>
+        <div class="right_text">
+            <div class="info">
+                <h3>BRAGANTINO</h3>
+                <small class="text_muted">VENCEU</small>
+            </div>
+            <h5 class="warning">SANTOS</h5>
+            <h3>2 x 1</h3>
+        </div>
+    </div>
+
+    <div class="item onlion">
+        <div class="icon">
+            <span class="material-symbols-outlined">sports_and_outdoors</span>
+        </div>
+        <div class="right_text">
+            <div class="info">
+                <h3>CRUZEIRO</h3>
+                <small class="text_muted">VENCEU</small>
+            </div>
+            <h5 class="warning">VASCO</h5>
+            <h3>1 x 0</h3>
+        </div>
+    </div>
+
+    <div class="item onlion">
+        <div class="icon">
+            <span class="material-symbols-outlined">sports_and_outdoors</span>
+        </div>
+        <div class="right_text">
+            <div class="info">
+                <h3>BAHIA</h3>
+                <small class="text_muted">VENCEU</small>
+            </div>
+            <h5 class="warning">PALMEIRAS</h5>
+            <h3>1 x 0</h3>
+        </div>
+    </div>
+
+
+</div>
+
+<div class="item add_products">
+    <div>
+        <span class="material-symbols-outlined">add</span>
+    </div>
+</div>
+</div>
+
+</div>
+
+<script src="script.js"></script>
+    </body>
+</html>
