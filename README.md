@@ -18,4 +18,4 @@ Queria agradecer aos meus companheiros de grupo, que puderam me ajudar a desenvo
 LINK DO SITE HOSPEDADO
 ABAIXO!!!!1
 
-https://dashboard-futebol-2025.vercel.app/dashboard.html
+https://dashboard-futebol-2025.vercel.app
